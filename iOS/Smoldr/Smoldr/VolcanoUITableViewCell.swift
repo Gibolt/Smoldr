@@ -9,12 +9,8 @@
 import UIKit
 
 class VolcanoUITableViewCell: UITableViewCell {
-
-    
-    
     @IBOutlet var volcanoImageView: UIImageView!
     @IBOutlet var volcanoTitle: UILabel!
     @IBOutlet var volcanoSubtitle: UILabel!
     @IBOutlet var volcanoDatestamp: UILabel!
-    
 }

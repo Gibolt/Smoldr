@@ -16,6 +16,7 @@
 		461FC87B19BACC2D00AD2A64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461FC87A19BACC2D00AD2A64 /* Images.xcassets */; };
 		461FC88719BACC2D00AD2A64 /* SmoldrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FC88619BACC2D00AD2A64 /* SmoldrTests.swift */; };
 		461FC89119BAE45500AD2A64 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FC89019BAE45500AD2A64 /* ThirdViewController.swift */; };
+		466136E119BB8468007A3C44 /* HistoryUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466136E019BB8468007A3C44 /* HistoryUITableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		461FC88519BACC2D00AD2A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		461FC88619BACC2D00AD2A64 /* SmoldrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoldrTests.swift; sourceTree = "<group>"; };
 		461FC89019BAE45500AD2A64 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		466136E019BB8468007A3C44 /* HistoryUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryUITableViewCell.swift; sourceTree = "<group>"; };
 		4B8C3C1A2C7B4EBC9EABD71F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		56CE2D450B864337A821745A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 				461FC87519BACC2D00AD2A64 /* SecondViewController.swift */,
 				461FC89019BAE45500AD2A64 /* ThirdViewController.swift */,
 				4603663519BB335E00848AF1 /* VolcanoUITableViewCell.swift */,
+				466136E019BB8468007A3C44 /* HistoryUITableViewCell.swift */,
 				461FC87719BACC2D00AD2A64 /* Main.storyboard */,
 				461FC87A19BACC2D00AD2A64 /* Images.xcassets */,
 				461FC86F19BACC2D00AD2A64 /* Supporting Files */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466136E119BB8468007A3C44 /* HistoryUITableViewCell.swift in Sources */,
 				4603663619BB335E00848AF1 /* VolcanoUITableViewCell.swift in Sources */,
 				461FC87619BACC2D00AD2A64 /* SecondViewController.swift in Sources */,
 				461FC87219BACC2D00AD2A64 /* AppDelegate.swift in Sources */,
