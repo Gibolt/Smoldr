@@ -8,29 +8,13 @@
 
 import UIKit
 
-class VolcanoUITableViewCell: UITableViewCell, UITableViewDataSource, UITableViewDelegate {
+class VolcanoUITableViewCell: UITableViewCell {
 
-    required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    
     
     @IBOutlet var volcanoImageView: UIImageView!
     @IBOutlet var volcanoTitle: UILabel!
     @IBOutlet var volcanoSubtitle: UILabel!
     @IBOutlet var volcanoDatestamp: UILabel!
     
-    // MARK: Data Source
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
-        <#code#>
-    }
-    
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    
-    // MARK: Delegate
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        <#code#>
-    }
 }
