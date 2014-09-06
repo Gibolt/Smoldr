@@ -16,7 +16,7 @@
 		461FC88719BACC2D00AD2A64 /* SmoldrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FC88619BACC2D00AD2A64 /* SmoldrTests.swift */; };
 		461FC89119BAE45500AD2A64 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FC89019BAE45500AD2A64 /* ThirdViewController.swift */; };
 		46F320D819BAF79E00E808CD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46F320D719BAF79E00E808CD /* Settings.bundle */; };
-		46F320DA19BAF81A00E808CD /* libPods-InAppSettingsKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F320D919BAF81A00E808CD /* libPods-InAppSettingsKit.a */; };
+		46F320DC19BAFDA800E808CD /* libPods-InAppSettingsKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46F320DB19BAFDA800E808CD /* libPods-InAppSettingsKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,7 @@
 		461FC89019BAE45500AD2A64 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		46F320D719BAF79E00E808CD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		46F320D919BAF81A00E808CD /* libPods-InAppSettingsKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-InAppSettingsKit.a"; path = "Pods/build/Debug-iphoneos/libPods-InAppSettingsKit.a"; sourceTree = "<group>"; };
+		46F320DB19BAFDA800E808CD /* libPods-InAppSettingsKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-InAppSettingsKit.a"; path = "Pods/build/Debug-iphoneos/libPods-InAppSettingsKit.a"; sourceTree = "<group>"; };
 		4B8C3C1A2C7B4EBC9EABD71F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		56CE2D450B864337A821745A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46F320DA19BAF81A00E808CD /* libPods-InAppSettingsKit.a in Frameworks */,
+				46F320DC19BAFDA800E808CD /* libPods-InAppSettingsKit.a in Frameworks */,
 				3D4C8AF396A5486C8F1FAD26 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +131,7 @@
 		8B05E3D3F5AA43C0B7F3A38B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46F320DB19BAFDA800E808CD /* libPods-InAppSettingsKit.a */,
 				46F320D919BAF81A00E808CD /* libPods-InAppSettingsKit.a */,
 				56CE2D450B864337A821745A /* libPods.a */,
 			);
