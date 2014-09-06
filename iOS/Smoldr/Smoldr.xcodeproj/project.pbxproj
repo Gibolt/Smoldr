@@ -14,7 +14,6 @@
 		461FC87B19BACC2D00AD2A64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461FC87A19BACC2D00AD2A64 /* Images.xcassets */; };
 		461FC88719BACC2D00AD2A64 /* SmoldrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FC88619BACC2D00AD2A64 /* SmoldrTests.swift */; };
 		461FC89119BAE45500AD2A64 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461FC89019BAE45500AD2A64 /* ThirdViewController.swift */; };
-		46B7887519BAF15F001248BD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46B7887419BAF15F001248BD /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,6 @@
 		461FC88519BACC2D00AD2A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		461FC88619BACC2D00AD2A64 /* SmoldrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoldrTests.swift; sourceTree = "<group>"; };
 		461FC89019BAE45500AD2A64 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		46B7887419BAF15F001248BD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 				461FC87519BACC2D00AD2A64 /* SecondViewController.swift */,
 				461FC89019BAE45500AD2A64 /* ThirdViewController.swift */,
 				461FC87719BACC2D00AD2A64 /* Main.storyboard */,
-				46B7887419BAF15F001248BD /* Settings.bundle */,
 				461FC87A19BACC2D00AD2A64 /* Images.xcassets */,
 				461FC86F19BACC2D00AD2A64 /* Supporting Files */,
 			);
@@ -199,7 +196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				461FC87919BACC2D00AD2A64 /* Main.storyboard in Resources */,
-				46B7887519BAF15F001248BD /* Settings.bundle in Resources */,
 				461FC87B19BACC2D00AD2A64 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
