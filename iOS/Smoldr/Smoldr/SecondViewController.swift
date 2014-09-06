@@ -8,7 +8,8 @@
 
 import UIKit
 
-class SecondViewController: UITableViewController {
+class SecondViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet var historyTableView: UITableView!
                             
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,27 @@ class SecondViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: Data Source
+    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+        var historyTVC: HistoryUITableViewCell = tableView.dequeueReusableCellWithIdentifier("historyCell") as HistoryUITableViewCell
+        historyTVC.historyTitle.text = "hello"
+        historyTVC.historySubtitle.text = "smaller hello"
+        historyTVC.historyImageView.image = UIImage(named: "first")
+        
+        return historyTVC
+    }
+    
+    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+        return 5 // TODO: Make array length
+    }
+    
+    
+    // MARK: Deleoverride gate
+    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
 
