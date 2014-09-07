@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="amx-ak-HO7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bRg-dx-ANI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
+        <!--Smoldr-->
+        <scene sceneID="zIU-dz-qed">
+            <objects>
+                <navigationController title="Smoldr" id="vkG-n4-v08" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="LJP-Ve-k57"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qqg-N8-OEz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.81960784310000001" green="0.33333333329999998" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.81960784310000001" green="0.33333333329999998" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sOY-43-SWa" kind="relationship" relationship="rootViewController" id="nxa-7d-JNO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQ8-Pj-sD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="-2011"/>
+        </scene>
         <!--Home-->
         <scene sceneID="gZ0-vx-zof">
             <objects>
@@ -48,13 +67,14 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="bQd-Bf-nAI"/>
+                    <navigationItem key="navigationItem" id="Ufe-cS-gK1"/>
                     <connections>
                         <outlet property="volcanoTableView" destination="Pgy-u0-EC7" id="MnL-ee-nZ8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYO-bV-SH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="-832"/>
+            <point key="canvasLocation" x="1944" y="-2004"/>
         </scene>
         <!--History-->
         <scene sceneID="BFd-dD-G43">
@@ -100,31 +120,14 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="history" id="PO9-H7-47h"/>
+                    <navigationItem key="navigationItem" id="alJ-cO-C2R"/>
                     <connections>
                         <outlet property="historyTableView" destination="gdN-vf-jXw" id="8Vy-1X-AO7"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJR-PJ-SJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="-160"/>
-        </scene>
-        <!--Nav Con-->
-        <scene sceneID="XYb-1M-ua2">
-            <objects>
-                <navigationController id="amx-ak-HO7" customClass="NavCon" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mrh-xM-75d">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.81960784313725488" green="0.33333333333333331" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="bRg-dx-ANI" kind="relationship" relationship="rootViewController" id="hVX-Pv-wjV"/>
-                        <segue destination="adT-ZU-QaZ" kind="presentation" identifier="loginShow" id="D3N-DV-KW7"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ONy-xw-jTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1063" y="-790"/>
+            <point key="canvasLocation" x="1944" y="-672"/>
         </scene>
         <!--Smoldr-->
         <scene sceneID="Yla-IG-GSD">
@@ -135,45 +138,18 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xie-lU-txX">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.81960784310000001" green="0.33333333329999998" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.81960784313725488" green="0.33333333333333331" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="sOY-43-SWa" kind="relationship" relationship="viewControllers" id="qQt-yP-qrx"/>
-                        <segue destination="rCg-fN-XSX" kind="relationship" relationship="viewControllers" id="zdk-p5-MVW"/>
-                        <segue destination="PEi-NA-ZRv" kind="relationship" relationship="viewControllers" id="LnC-J3-Z8j"/>
+                        <segue destination="vkG-n4-v08" kind="relationship" relationship="viewControllers" id="FNB-Xs-avt"/>
+                        <segue destination="UQ4-W0-U6x" kind="relationship" relationship="viewControllers" id="EG1-Or-m38"/>
+                        <segue destination="9iH-ss-Iri" kind="relationship" relationship="viewControllers" id="Hbg-bo-FlR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hp4-t8-b7g" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
-        </scene>
-        <!--Sign Up/ Log In-->
-        <scene sceneID="LOp-F0-vtq">
-            <objects>
-                <viewController storyboardIdentifier="loginSignupVC" title="Sign Up/ Log In" id="adT-ZU-QaZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Bor-dG-TAQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="M4S-8s-X4r"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DEb-uw-bgE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed2-FF-vCb">
-                                <rect key="frame" x="102" y="184" width="38" height="30"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <nil key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d78-WG-gOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1343" y="314"/>
+            <point key="canvasLocation" x="-768" y="-672"/>
         </scene>
         <!--Settings-->
         <scene sceneID="HMP-z9-zYG">
@@ -243,10 +219,49 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" id="Kzx-gs-fhW"/>
+                    <navigationItem key="navigationItem" id="opa-m9-ySB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYD-tu-FBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="493"/>
+            <point key="canvasLocation" x="1944" y="1050"/>
+        </scene>
+        <!--Smoldr-->
+        <scene sceneID="1ki-kf-ztk">
+            <objects>
+                <navigationController title="Smoldr" id="UQ4-W0-U6x" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7ia-B5-iC1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qys-Zw-LOY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.81960784310000001" green="0.33333333329999998" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.81960784310000001" green="0.33333333329999998" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rCg-fN-XSX" kind="relationship" relationship="rootViewController" id="WIC-oI-Adh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PiK-6W-t9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="-672"/>
+        </scene>
+        <!--Smoldr-->
+        <scene sceneID="gs4-GX-d4s">
+            <objects>
+                <navigationController title="Smoldr" id="9iH-ss-Iri" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gI7-aq-FRt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qe5-7o-vsm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.81960784310000001" green="0.33333333329999998" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.81960784310000001" green="0.33333333329999998" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PEi-NA-ZRv" kind="relationship" relationship="rootViewController" id="Kpa-PJ-gM1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5VQ-N2-3BK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="651" y="1050"/>
         </scene>
     </scenes>
     <resources>

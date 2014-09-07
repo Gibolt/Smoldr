@@ -9,7 +9,5 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
-    override func viewDidLoad() {
-        println("maintab")
-    }
+
 }

@@ -12,11 +12,14 @@ class FirstViewController: UIViewController {
                             
     @IBOutlet var volcanoTableView: UITableView!
 
+    override func viewDidLoad() {
+        manualSegueCheck()
+    }
 
     func manualSegueCheck() {
         if !NSUserDefaults.standardUserDefaults().boolForKey("isLoggedIn") {
             // go to login
-            self.presentViewController(LoginSignupTabBarController(), animated: true, completion: nil)
+            //self.presentViewController(LoginSignupTabBarController(), animated: true, completion: nil)
         }
     }
 
