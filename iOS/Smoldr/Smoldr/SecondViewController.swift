@@ -25,9 +25,7 @@ class SecondViewController: UITableViewController, UITableViewDelegate, UITableV
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var historyTVC: HistoryUITableViewCell = tableView.dequeueReusableCellWithIdentifier("historyCell") as HistoryUITableViewCell
         historyTVC.historyTitle.text = "hello"
-        historyTVC.historySubtitle.text = "smaller hello"
-        historyTVC.historyImageView.image = UIImage(named: "first")
-        
+        historyTVC.historySubtitle.text = "smaller hello"        
         return historyTVC
     }
     
