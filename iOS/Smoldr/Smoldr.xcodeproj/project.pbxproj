@@ -10,6 +10,7 @@
 		4609A38419BC328000C62B7E /* NavCon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4609A38319BC328000C62B7E /* NavCon.swift */; };
 		463DFEF719BC45E300F90B04 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463DFEF619BC45E300F90B04 /* MainTabBar.swift */; };
 		463DFEFD19BC47A000F90B04 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 463DFEFB19BC47A000F90B04 /* Info.plist */; };
+		463DFF1B19BC605400F90B04 /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463DFF1A19BC605400F90B04 /* LoginSignupViewController.swift */; };
 		465A4FFE19BBC25B003A4C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A4FFD19BBC25B003A4C38 /* AppDelegate.swift */; };
 		465A500019BBC25B003A4C38 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A4FFF19BBC25B003A4C38 /* FirstViewController.swift */; };
 		465A500219BBC25B003A4C38 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A500119BBC25B003A4C38 /* SecondViewController.swift */; };
@@ -35,6 +36,7 @@
 		4609A38319BC328000C62B7E /* NavCon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavCon.swift; sourceTree = "<group>"; };
 		463DFEF619BC45E300F90B04 /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		463DFEFB19BC47A000F90B04 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		463DFF1A19BC605400F90B04 /* LoginSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
 		465A4FF819BBC25B003A4C38 /* Smoldr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoldr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		465A4FFC19BBC25B003A4C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465A4FFD19BBC25B003A4C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				465A501E19BBC2AE003A4C38 /* VolcanoUITableViewCell.swift */,
 				465A502019BBC2BB003A4C38 /* HistoryUITableViewCell.swift */,
 				4609A38319BC328000C62B7E /* NavCon.swift */,
+				463DFF1A19BC605400F90B04 /* LoginSignupViewController.swift */,
 				465A500319BBC25B003A4C38 /* Main.storyboard */,
 				465A500619BBC25B003A4C38 /* Images.xcassets */,
 				465A4FFB19BBC25B003A4C38 /* Supporting Files */,
@@ -242,6 +245,7 @@
 				465A501F19BBC2AE003A4C38 /* VolcanoUITableViewCell.swift in Sources */,
 				465A500219BBC25B003A4C38 /* SecondViewController.swift in Sources */,
 				4609A38419BC328000C62B7E /* NavCon.swift in Sources */,
+				463DFF1B19BC605400F90B04 /* LoginSignupViewController.swift in Sources */,
 				463DFEF719BC45E300F90B04 /* MainTabBar.swift in Sources */,
 				465A4FFE19BBC25B003A4C38 /* AppDelegate.swift in Sources */,
 				465A501D19BBC269003A4C38 /* ThirdViewController.swift in Sources */,

@@ -11,13 +11,17 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
-    var window: UIWindow?
-
+    var window: UIWindow!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        var vc = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle()).instantiateViewControllerWithIdentifier("loginSignupVC") as UIViewController
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application launch.
         NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isLoggedIn")
         
+        self.window.rootViewController = vc;
         return true
     }
 
