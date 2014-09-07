@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="1356" y="0.0"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="Yla-IG-GSD">
             <objects>
-                <tabBarController id="bRg-dx-ANI" sceneMemberID="viewController">
+                <tabBarController id="bRg-dx-ANI" customClass="MainTabBarController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xie-lU-txX">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -127,6 +127,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hp4-t8-b7g" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="Drt-tj-HEm">
+            <objects>
+                <viewController title="Sign Up" id="xqe-ku-hHd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Xz-hh-mQm"/>
+                        <viewControllerLayoutGuide type="bottom" id="odG-ss-F8p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XuI-Vr-DUL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sign Up" selectedImage="gear" id="0YM-sf-USO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tf0-tv-jXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="1682"/>
+        </scene>
+        <!--Log In-->
+        <scene sceneID="lIJ-uR-vNp">
+            <objects>
+                <viewController title="Log In" id="0pJ-OY-v8s" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6eC-8K-nLU"/>
+                        <viewControllerLayoutGuide type="bottom" id="WO9-gM-yx0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wOk-ww-jpj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="RUE-TQ-GOh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zxj-xT-Wjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="1682"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="V6h-BN-jc6">
+            <objects>
+                <tabBarController id="Nb5-sO-QHG" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="HFF-XV-hFt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0pJ-OY-v8s" kind="relationship" relationship="viewControllers" id="nuR-LU-Vwf"/>
+                        <segue destination="xqe-ku-hHd" kind="relationship" relationship="viewControllers" id="bgv-Hd-mgA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DwJ-sn-SsT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="742"/>
         </scene>
         <!--Settings-->
         <scene sceneID="HMP-z9-zYG">
