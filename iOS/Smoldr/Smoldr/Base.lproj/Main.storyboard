@@ -151,6 +151,27 @@
             </objects>
             <point key="canvasLocation" x="-768" y="-672"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Bz0-zj-UEj">
+            <objects>
+                <viewController storyboardIdentifier="loginScreen" id="4ea-wF-bMf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J9V-3E-Krl"/>
+                        <viewControllerLayoutGuide type="bottom" id="CeX-Qm-We0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wj8-qw-FUd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="bRg-dx-ANI" kind="presentation" id="esf-BK-XZi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EA1-aD-PWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-802" y="236"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="HMP-z9-zYG">
             <objects>

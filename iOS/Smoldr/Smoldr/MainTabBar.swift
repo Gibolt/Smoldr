@@ -11,9 +11,11 @@ import Foundation
 
 class MainTabBar: UITabBarController {
     
-    func viewDidAppear() {
+    override func viewDidLoad() {
+        println("something")
         if !NSUserDefaults.standardUserDefaults().boolForKey("isLoggedIn") {
-            println("you got it son")
+            println("not logged in")
+            
         }
 
     }
