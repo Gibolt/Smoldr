@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z6R-c1-doz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="amx-ak-HO7">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController title="Home" id="sOY-43-SWa" customClass="FirstViewController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" id="Pgy-u0-EC7">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -54,14 +54,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYO-bV-SH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1348" y="-826"/>
+            <point key="canvasLocation" x="1348" y="-832"/>
         </scene>
         <!--History-->
         <scene sceneID="BFd-dD-G43">
             <objects>
                 <tableViewController title="History" id="rCg-fN-XSX" customClass="SecondViewController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="22" sectionFooterHeight="22" id="gdN-vf-jXw">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -108,37 +108,35 @@
             </objects>
             <point key="canvasLocation" x="1348" y="-160"/>
         </scene>
-        <!--Initial View Controller-->
-        <scene sceneID="hab-bi-Sf5">
+        <!--Nav Con-->
+        <scene sceneID="XYb-1M-ua2">
             <objects>
-                <viewController id="z6R-c1-doz" customClass="InitialViewController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9d1-I3-OJn"/>
-                        <viewControllerLayoutGuide type="bottom" id="Tzj-oj-IkJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Skd-kE-rp3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                <navigationController id="amx-ak-HO7" customClass="NavCon" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mrh-xM-75d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.81960784313725488" green="0.33333333333333331" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
                     <connections>
-                        <segue destination="bRg-dx-ANI" kind="show" identifier="segueToMainPage" id="e0q-Nk-8eF"/>
-                        <segue destination="adT-ZU-QaZ" kind="show" identifier="ShowLoginSignupPage" id="s3k-xx-t9H"/>
+                        <segue destination="bRg-dx-ANI" kind="relationship" relationship="rootViewController" id="hVX-Pv-wjV"/>
+                        <segue destination="adT-ZU-QaZ" kind="presentation" identifier="loginShow" id="D3N-DV-KW7"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MCs-w2-jlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONy-xw-jTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-668" y="0.0"/>
+            <point key="canvasLocation" x="-1063" y="-790"/>
         </scene>
-        <!--Main Tab Bar Controller-->
+        <!--Smoldr-->
         <scene sceneID="Yla-IG-GSD">
             <objects>
                 <tabBarController id="bRg-dx-ANI" customClass="MainTabBarController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Smoldr" id="1vT-6k-uOh"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xie-lU-txX">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.81960784313725488" green="0.33333333333333331" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="sOY-43-SWa" kind="relationship" relationship="viewControllers" id="qQt-yP-qrx"/>
@@ -153,7 +151,7 @@
         <!--Sign Up/ Log In-->
         <scene sceneID="LOp-F0-vtq">
             <objects>
-                <viewController title="Sign Up/ Log In" id="adT-ZU-QaZ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginSignupVC" title="Sign Up/ Log In" id="adT-ZU-QaZ" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bor-dG-TAQ"/>
                         <viewControllerLayoutGuide type="bottom" id="M4S-8s-X4r"/>
@@ -162,56 +160,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signupTabBar" translatesAutoresizingMaskIntoConstraints="NO" id="JcP-PK-PBw">
-                                <rect key="frame" x="0.0" y="512" width="300" height="88"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginTabBar" translatesAutoresizingMaskIntoConstraints="NO" id="2wL-0S-UDV">
-                                <rect key="frame" x="300" y="512" width="300" height="88"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="flamingBus" translatesAutoresizingMaskIntoConstraints="NO" id="gOM-6b-asl">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="512"/>
-                            </imageView>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Some Random Tagline About Dying In Fire" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbv-Oc-vg0">
-                                <rect key="frame" x="35" y="321" width="332" height="114"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="196" id="87e-ST-ke5"/>
-                                    <constraint firstAttribute="width" constant="224" id="SP8-qt-xOT"/>
-                                </constraints>
-                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                            </textView>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Some Random Tagline About Dying In Fire" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zan-1q-sDx">
-                                <rect key="frame" x="35" y="128" width="224" height="196"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="224" id="Wy7-vp-2dv"/>
-                                    <constraint firstAttribute="height" constant="196" id="zIV-e4-UX2"/>
-                                </constraints>
-                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="TeluguSangamMN" family="Telugu Sangam MN" pointSize="37"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed2-FF-vCb">
+                                <rect key="frame" x="102" y="184" width="38" height="30"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="gOM-6b-asl" firstAttribute="leading" secondItem="Zan-1q-sDx" secondAttribute="trailing" constant="-259" id="9pl-zW-Emh"/>
-                            <constraint firstItem="gOM-6b-asl" firstAttribute="top" secondItem="Zan-1q-sDx" secondAttribute="bottom" constant="-324" id="Io0-sV-rik"/>
-                        </constraints>
                     </view>
                     <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d78-WG-gOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-122" y="896"/>
+            <point key="canvasLocation" x="-1343" y="314"/>
         </scene>
         <!--Settings-->
         <scene sceneID="HMP-z9-zYG">
             <objects>
                 <tableViewController title="Settings" id="PEi-NA-ZRv" customClass="ThirdViewController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="vya-Jy-aaM">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -281,9 +250,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flamingBus" width="2048" height="1365"/>
         <image name="gear" width="30" height="30"/>
-        <image name="loginTabBar" width="300" height="83"/>
-        <image name="signupTabBar" width="300" height="83"/>
     </resources>
 </document>

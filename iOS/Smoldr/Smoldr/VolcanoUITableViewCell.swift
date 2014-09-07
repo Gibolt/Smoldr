@@ -9,6 +9,7 @@
 import UIKit
 
 class VolcanoUITableViewCell: UITableViewCell {
+    @IBOutlet var segueToLoginButton: UIButton!
     @IBOutlet var volcanoImageView: UIImageView!
     @IBOutlet var volcanoTitle: UILabel!
     @IBOutlet var volcanoSubtitle: UILabel!

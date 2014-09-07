@@ -11,11 +11,14 @@ import UIKit
 class FirstViewController: UIViewController {
                             
     @IBOutlet var volcanoTableView: UITableView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
+
+    func manualSegueCheck() {
+        if !NSUserDefaults.standardUserDefaults().boolForKey("isLoggedIn") {
+            // go to login
+            self.presentViewController(LoginSignupTabBarController(), animated: true, completion: nil)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -28,6 +31,7 @@ class FirstViewController: UIViewController {
         volcanoUITableViewCell.volcanoTitle.text = "hello"
         volcanoUITableViewCell.volcanoSubtitle.text = "smaller hello"
         volcanoUITableViewCell.volcanoImageView.image = UIImage(named: "first")
+        volcanoUITableViewCell.backgroundColor = UIColor(red: 10, green: 10, blue: 10, alpha: 1.0)
         
         return volcanoUITableViewCell
     }
