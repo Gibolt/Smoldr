@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         // Override point for customization after application launch.
-        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isLoggedIn")
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isLoggedIn")
         
         self.window.rootViewController = vc;
         return true

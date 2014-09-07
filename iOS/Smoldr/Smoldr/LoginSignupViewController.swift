@@ -13,15 +13,13 @@ class LoginSignupViewController: UIViewController {
     
     
     @IBOutlet var usernameField: UITextField!
-    @IBOutlet var imageView: UIImageView!
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var passwordField: UITextField!
     
     
-    
     //MARK: Global Variables for Changing Image Functionality.
     private var idx: Int = 0
-    private let backGroundArray = [UIImage(named: "img1.jpg"),UIImage(named:"img2.jpg"), UIImage(named: "img3.jpg"), UIImage(named: "img4.jpg")]
+    private let backGroundArray = [UIImage(named: "white_wall")]
     
     //MARK: View Controller LifeCycle
     override func viewDidLoad() {
@@ -46,9 +44,6 @@ class LoginSignupViewController: UIViewController {
         var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.Dark)) as UIVisualEffectView
         visualEffectView.frame = self.view.frame
         visualEffectView.alpha = 0.5
-        imageView.image = UIImage(named: "img1.jpg")
-        imageView.addSubview(visualEffectView)
-        
         
         NSTimer.scheduledTimerWithTimeInterval(6, target: self, selector: "changeImage", userInfo: nil, repeats: true)
         self.loginButton(false)
@@ -61,7 +56,7 @@ class LoginSignupViewController: UIViewController {
     func loginButton(enabled: Bool) -> () {
         func enable(){
             UIView.animateWithDuration(0.3, delay: 0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
-                self.loginButton.backgroundColor = UIColor.colorWithHex("#33CC00", alpha: 1)
+                self.loginButton.backgroundColor = UIColor.colorWithHex("#4CD964", alpha: 1)
                 }, completion: nil)
             loginButton.enabled = true
         }
@@ -82,7 +77,6 @@ class LoginSignupViewController: UIViewController {
             idx++
         }
         var toImage = backGroundArray[idx];
-        UIView.transitionWithView(self.imageView, duration: 3, options: .TransitionCrossDissolve, animations: {self.imageView.image = toImage}, completion: nil)
         
     }
     
@@ -104,6 +98,9 @@ class LoginSignupViewController: UIViewController {
 
     
     @IBAction func buttonPressed(sender: AnyObject) {
+        let url = NSURL(string: "https://web.engr.illinois.edu/login.php?email=\(usernameField.text)&password=\(passwordField.text)")
+        var request = NSMutableURLRequest(URL: url)
+
         self.performSegueWithIdentifier("login", sender: self)
     }
     
