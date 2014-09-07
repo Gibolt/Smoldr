@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="811" y="-2012"/>
         </scene>
-        <!--Home-->
+        <!--Sensors-->
         <scene sceneID="gZ0-vx-zof">
             <objects>
-                <tableViewController title="Home" id="sOY-43-SWa" customClass="FirstViewController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Sensors" id="sOY-43-SWa" customClass="FirstViewController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="22" sectionFooterHeight="22" id="Pgy-u0-EC7">
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="bQd-Bf-nAI"/>
-                    <navigationItem key="navigationItem" id="Ufe-cS-gK1"/>
+                    <navigationItem key="navigationItem" title="Sensors" id="Ufe-cS-gK1"/>
                     <connections>
                         <outlet property="volcanoTableView" destination="Pgy-u0-EC7" id="MnL-ee-nZ8"/>
                     </connections>
@@ -120,7 +120,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="history" id="PO9-H7-47h"/>
-                    <navigationItem key="navigationItem" id="alJ-cO-C2R"/>
+                    <navigationItem key="navigationItem" title="History" id="alJ-cO-C2R"/>
                     <connections>
                         <outlet property="historyTableView" destination="gdN-vf-jXw" id="8Vy-1X-AO7"/>
                     </connections>
@@ -132,7 +132,7 @@
         <!--Smoldr-->
         <scene sceneID="Yla-IG-GSD">
             <objects>
-                <tabBarController id="bRg-dx-ANI" sceneMemberID="viewController">
+                <tabBarController id="bRg-dx-ANI" customClass="MainTabBar" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Smoldr" id="1vT-6k-uOh"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xie-lU-txX">
@@ -219,7 +219,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" id="Kzx-gs-fhW"/>
-                    <navigationItem key="navigationItem" id="opa-m9-ySB"/>
+                    <navigationItem key="navigationItem" title="Settings" id="opa-m9-ySB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYD-tu-FBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,7 +261,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5VQ-N2-3BK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="827" y="906"/>
+            <point key="canvasLocation" x="971" y="938"/>
         </scene>
     </scenes>
     <resources>

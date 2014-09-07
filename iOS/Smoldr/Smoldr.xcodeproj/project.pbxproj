@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4609A38419BC328000C62B7E /* NavCon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4609A38319BC328000C62B7E /* NavCon.swift */; };
+		463DFEF719BC45E300F90B04 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463DFEF619BC45E300F90B04 /* MainTabBar.swift */; };
+		463DFEFD19BC47A000F90B04 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 463DFEFB19BC47A000F90B04 /* Info.plist */; };
 		465A4FFE19BBC25B003A4C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A4FFD19BBC25B003A4C38 /* AppDelegate.swift */; };
 		465A500019BBC25B003A4C38 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A4FFF19BBC25B003A4C38 /* FirstViewController.swift */; };
 		465A500219BBC25B003A4C38 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A500119BBC25B003A4C38 /* SecondViewController.swift */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		4609A38319BC328000C62B7E /* NavCon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavCon.swift; sourceTree = "<group>"; };
+		463DFEF619BC45E300F90B04 /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		463DFEFB19BC47A000F90B04 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465A4FF819BBC25B003A4C38 /* Smoldr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoldr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		465A4FFC19BBC25B003A4C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465A4FFD19BBC25B003A4C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		463DFEF819BC47A000F90B04 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				463DFEFB19BC47A000F90B04 /* Info.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		465A4FEF19BBC25B003A4C38 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				465A4FFD19BBC25B003A4C38 /* AppDelegate.swift */,
+				463DFEF619BC45E300F90B04 /* MainTabBar.swift */,
 				465A4FFF19BBC25B003A4C38 /* FirstViewController.swift */,
 				465A500119BBC25B003A4C38 /* SecondViewController.swift */,
 				465A501C19BBC269003A4C38 /* ThirdViewController.swift */,
@@ -102,6 +115,7 @@
 		465A4FFB19BBC25B003A4C38 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				463DFEF819BC47A000F90B04 /* Source */,
 				465A4FFC19BBC25B003A4C38 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -206,6 +220,7 @@
 			files = (
 				465A500519BBC25B003A4C38 /* Main.storyboard in Resources */,
 				465A500719BBC25B003A4C38 /* Images.xcassets in Resources */,
+				463DFEFD19BC47A000F90B04 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +242,7 @@
 				465A501F19BBC2AE003A4C38 /* VolcanoUITableViewCell.swift in Sources */,
 				465A500219BBC25B003A4C38 /* SecondViewController.swift in Sources */,
 				4609A38419BC328000C62B7E /* NavCon.swift in Sources */,
+				463DFEF719BC45E300F90B04 /* MainTabBar.swift in Sources */,
 				465A4FFE19BBC25B003A4C38 /* AppDelegate.swift in Sources */,
 				465A501D19BBC269003A4C38 /* ThirdViewController.swift in Sources */,
 				465A500019BBC25B003A4C38 /* FirstViewController.swift in Sources */,
