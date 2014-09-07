@@ -1,5 +1,5 @@
 //
-//  MainTabBarController.swift
+//  LoginSignupTabBarController.swift
 //  Smoldr
 //
 //  Created by Andrew Breckenridge on 9/6/14.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
-
+class LoginSignupTabBarController: UITabBarController {
+    
 }

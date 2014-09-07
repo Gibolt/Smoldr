@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		464381E919BBEF0E0069273F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464381E819BBEF0E0069273F /* MainTabBarController.swift */; };
 		464381ED19BBF4430069273F /* AirbnbTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464381EC19BBF4430069273F /* AirbnbTabBarItem.swift */; };
+		464381EF19BBFCE20069273F /* LoginSignupTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464381EE19BBFCE20069273F /* LoginSignupTabBarController.swift */; };
+		464381F119BC09D90069273F /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464381F019BC09D90069273F /* InitialViewController.swift */; };
 		465A4FFE19BBC25B003A4C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A4FFD19BBC25B003A4C38 /* AppDelegate.swift */; };
 		465A500019BBC25B003A4C38 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A4FFF19BBC25B003A4C38 /* FirstViewController.swift */; };
 		465A500219BBC25B003A4C38 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465A500119BBC25B003A4C38 /* SecondViewController.swift */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		464381E819BBEF0E0069273F /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		464381EC19BBF4430069273F /* AirbnbTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirbnbTabBarItem.swift; sourceTree = "<group>"; };
+		464381EE19BBFCE20069273F /* LoginSignupTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupTabBarController.swift; sourceTree = "<group>"; };
+		464381F019BC09D90069273F /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		465A4FF819BBC25B003A4C38 /* Smoldr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoldr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		465A4FFC19BBC25B003A4C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		465A4FFD19BBC25B003A4C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,11 +93,13 @@
 			children = (
 				465A4FFD19BBC25B003A4C38 /* AppDelegate.swift */,
 				464381E819BBEF0E0069273F /* MainTabBarController.swift */,
+				464381F019BC09D90069273F /* InitialViewController.swift */,
 				465A4FFF19BBC25B003A4C38 /* FirstViewController.swift */,
 				465A500119BBC25B003A4C38 /* SecondViewController.swift */,
 				465A501C19BBC269003A4C38 /* ThirdViewController.swift */,
 				465A501E19BBC2AE003A4C38 /* VolcanoUITableViewCell.swift */,
 				465A502019BBC2BB003A4C38 /* HistoryUITableViewCell.swift */,
+				464381EE19BBFCE20069273F /* LoginSignupTabBarController.swift */,
 				464381EC19BBF4430069273F /* AirbnbTabBarItem.swift */,
 				465A500319BBC25B003A4C38 /* Main.storyboard */,
 				465A500619BBC25B003A4C38 /* Images.xcassets */,
@@ -227,9 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				465A502119BBC2BB003A4C38 /* HistoryUITableViewCell.swift in Sources */,
+				464381EF19BBFCE20069273F /* LoginSignupTabBarController.swift in Sources */,
 				465A501F19BBC2AE003A4C38 /* VolcanoUITableViewCell.swift in Sources */,
 				464381ED19BBF4430069273F /* AirbnbTabBarItem.swift in Sources */,
 				465A500219BBC25B003A4C38 /* SecondViewController.swift in Sources */,
+				464381F119BC09D90069273F /* InitialViewController.swift in Sources */,
 				464381E919BBEF0E0069273F /* MainTabBarController.swift in Sources */,
 				465A4FFE19BBC25B003A4C38 /* AppDelegate.swift in Sources */,
 				465A501D19BBC269003A4C38 /* ThirdViewController.swift in Sources */,

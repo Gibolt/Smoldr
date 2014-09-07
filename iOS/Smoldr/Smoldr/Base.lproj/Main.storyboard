@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bRg-dx-ANI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z6R-c1-doz">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
@@ -47,14 +47,14 @@
                             <outlet property="delegate" destination="sOY-43-SWa" id="y3w-Og-2Fo"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Home" id="bQd-Bf-nAI"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="bQd-Bf-nAI"/>
                     <connections>
                         <outlet property="volcanoTableView" destination="Pgy-u0-EC7" id="MnL-ee-nZ8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYO-bV-SH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="-666"/>
+            <point key="canvasLocation" x="1348" y="-826"/>
         </scene>
         <!--History-->
         <scene sceneID="BFd-dD-G43">
@@ -106,7 +106,29 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJR-PJ-SJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="0.0"/>
+            <point key="canvasLocation" x="1348" y="-160"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="hab-bi-Sf5">
+            <objects>
+                <viewController id="z6R-c1-doz" customClass="InitialViewController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9d1-I3-OJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tzj-oj-IkJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Skd-kE-rp3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="bRg-dx-ANI" kind="show" identifier="segueToMainPage" id="e0q-Nk-8eF"/>
+                        <segue destination="adT-ZU-QaZ" kind="show" identifier="ShowLoginSignupPage" id="s3k-xx-t9H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCs-w2-jlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="0.0"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="Yla-IG-GSD">
@@ -128,62 +150,61 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Sign Up-->
-        <scene sceneID="Drt-tj-HEm">
+        <!--Sign Up/ Log In-->
+        <scene sceneID="LOp-F0-vtq">
             <objects>
-                <viewController title="Sign Up" id="xqe-ku-hHd" sceneMemberID="viewController">
+                <viewController title="Sign Up/ Log In" id="adT-ZU-QaZ" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8Xz-hh-mQm"/>
-                        <viewControllerLayoutGuide type="bottom" id="odG-ss-F8p"/>
+                        <viewControllerLayoutGuide type="top" id="Bor-dG-TAQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="M4S-8s-X4r"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XuI-Vr-DUL">
+                    <view key="view" contentMode="scaleToFill" id="DEb-uw-bgE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="signupTabBar" translatesAutoresizingMaskIntoConstraints="NO" id="JcP-PK-PBw">
+                                <rect key="frame" x="0.0" y="512" width="300" height="88"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginTabBar" translatesAutoresizingMaskIntoConstraints="NO" id="2wL-0S-UDV">
+                                <rect key="frame" x="300" y="512" width="300" height="88"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="flamingBus" translatesAutoresizingMaskIntoConstraints="NO" id="gOM-6b-asl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="512"/>
+                            </imageView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Some Random Tagline About Dying In Fire" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbv-Oc-vg0">
+                                <rect key="frame" x="35" y="321" width="332" height="114"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="87e-ST-ke5"/>
+                                    <constraint firstAttribute="width" constant="224" id="SP8-qt-xOT"/>
+                                </constraints>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="Some Random Tagline About Dying In Fire" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zan-1q-sDx">
+                                <rect key="frame" x="35" y="128" width="224" height="196"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="Wy7-vp-2dv"/>
+                                    <constraint firstAttribute="height" constant="196" id="zIV-e4-UX2"/>
+                                </constraints>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="TeluguSangamMN" family="Telugu Sangam MN" pointSize="37"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gOM-6b-asl" firstAttribute="leading" secondItem="Zan-1q-sDx" secondAttribute="trailing" constant="-259" id="9pl-zW-Emh"/>
+                            <constraint firstItem="gOM-6b-asl" firstAttribute="top" secondItem="Zan-1q-sDx" secondAttribute="bottom" constant="-324" id="Io0-sV-rik"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sign Up" selectedImage="gear" id="0YM-sf-USO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tf0-tv-jXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-332" y="1682"/>
-        </scene>
-        <!--Log In-->
-        <scene sceneID="lIJ-uR-vNp">
-            <objects>
-                <viewController title="Log In" id="0pJ-OY-v8s" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6eC-8K-nLU"/>
-                        <viewControllerLayoutGuide type="bottom" id="WO9-gM-yx0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wOk-ww-jpj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="RUE-TQ-GOh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zxj-xT-Wjb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="382" y="1682"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="V6h-BN-jc6">
-            <objects>
-                <tabBarController id="Nb5-sO-QHG" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="HFF-XV-hFt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="0pJ-OY-v8s" kind="relationship" relationship="viewControllers" id="nuR-LU-Vwf"/>
-                        <segue destination="xqe-ku-hHd" kind="relationship" relationship="viewControllers" id="bgv-Hd-mgA"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DwJ-sn-SsT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d78-WG-gOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="742"/>
+            <point key="canvasLocation" x="-122" y="896"/>
         </scene>
         <!--Settings-->
         <scene sceneID="HMP-z9-zYG">
@@ -256,10 +277,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYD-tu-FBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="589"/>
+            <point key="canvasLocation" x="1348" y="493"/>
         </scene>
     </scenes>
     <resources>
+        <image name="flamingBus" width="2048" height="1365"/>
         <image name="gear" width="30" height="30"/>
+        <image name="loginTabBar" width="300" height="83"/>
+        <image name="signupTabBar" width="300" height="83"/>
     </resources>
 </document>
