@@ -21,7 +21,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQ8-Pj-sD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713" y="-2011"/>
+            <point key="canvasLocation" x="811" y="-2012"/>
         </scene>
         <!--Home-->
         <scene sceneID="gZ0-vx-zof">
@@ -132,7 +132,7 @@
         <!--Smoldr-->
         <scene sceneID="Yla-IG-GSD">
             <objects>
-                <tabBarController id="bRg-dx-ANI" customClass="MainTabBarController" customModule="Smoldr" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="bRg-dx-ANI" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Smoldr" id="1vT-6k-uOh"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xie-lU-txX">
@@ -261,7 +261,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5VQ-N2-3BK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="651" y="1050"/>
+            <point key="canvasLocation" x="827" y="906"/>
         </scene>
     </scenes>
     <resources>
