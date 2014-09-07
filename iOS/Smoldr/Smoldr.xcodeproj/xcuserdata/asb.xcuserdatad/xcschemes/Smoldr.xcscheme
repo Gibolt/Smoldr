@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "461FC86B19BACC2D00AD2A64"
+               BlueprintIdentifier = "465A4FF719BBC25B003A4C38"
                BuildableName = "Smoldr.app"
                BlueprintName = "Smoldr"
                ReferencedContainer = "container:Smoldr.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "461FC87F19BACC2D00AD2A64"
+               BlueprintIdentifier = "465A500B19BBC25B003A4C38"
                BuildableName = "SmoldrTests.xctest"
                BlueprintName = "SmoldrTests"
                ReferencedContainer = "container:Smoldr.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "461FC87F19BACC2D00AD2A64"
+               BlueprintIdentifier = "465A500B19BBC25B003A4C38"
                BuildableName = "SmoldrTests.xctest"
                BlueprintName = "SmoldrTests"
                ReferencedContainer = "container:Smoldr.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "461FC86B19BACC2D00AD2A64"
+            BlueprintIdentifier = "465A4FF719BBC25B003A4C38"
             BuildableName = "Smoldr.app"
             BlueprintName = "Smoldr"
             ReferencedContainer = "container:Smoldr.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "461FC86B19BACC2D00AD2A64"
+            BlueprintIdentifier = "465A4FF719BBC25B003A4C38"
             BuildableName = "Smoldr.app"
             BlueprintName = "Smoldr"
             ReferencedContainer = "container:Smoldr.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "461FC86B19BACC2D00AD2A64"
+            BlueprintIdentifier = "465A4FF719BBC25B003A4C38"
             BuildableName = "Smoldr.app"
             BlueprintName = "Smoldr"
             ReferencedContainer = "container:Smoldr.xcodeproj">

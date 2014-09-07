@@ -12,4 +12,5 @@ class HistoryUITableViewCell: UITableViewCell {
     @IBOutlet var historyImageView: UIImageView!
     @IBOutlet var historyTitle: UILabel!
     @IBOutlet var historySubtitle: UILabel!
+    
 }

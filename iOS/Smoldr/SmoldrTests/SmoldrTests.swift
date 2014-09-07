@@ -2,7 +2,7 @@
 //  SmoldrTests.swift
 //  SmoldrTests
 //
-//  Created by Andrew Breckenridge on 9/5/14.
+//  Created by Andrew Breckenridge on 9/6/14.
 //  Copyright (c) 2014 asb. All rights reserved.
 //
 
