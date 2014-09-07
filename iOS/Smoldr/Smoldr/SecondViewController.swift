@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var historyTableView: UITableView!
-    
+    var data = ["Added bedroom smoke alarms", "Added kitchen smoke alarms", "Tested living room smoke alarms", "Added living room smoke alarms", "False smoke alarm in office", ]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,13 +24,13 @@ class SecondViewController: UITableViewController, UITableViewDelegate, UITableV
     // MARK: Data Source
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var historyTVC: HistoryUITableViewCell = tableView.dequeueReusableCellWithIdentifier("historyCell") as HistoryUITableViewCell
-        historyTVC.historyTitle.text = "hello"
-        historyTVC.historySubtitle.text = "smaller hello"        
+        historyTVC.historyTitle.text = data[indexPath.row]
+        historyTVC.historySubtitle.text = ""        
         return historyTVC
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5 // TODO: Make array length
+        return data.count
     }
     
     
