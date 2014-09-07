@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B6Y-4r-ZdS">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Smoldr-->
         <scene sceneID="zIU-dz-qed">
             <objects>
                 <navigationController title="Smoldr" id="vkG-n4-v08" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="LJP-Ve-k57"/>
+                    <tabBarItem key="tabBarItem" title="Smoke Alarms" image="second" id="LJP-Ve-k57"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qqg-N8-OEz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -90,19 +92,27 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t5O-I0-3Dd" id="phX-Zl-bKX">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-tN-h8o">
-                                            <rect key="frame" x="8" y="8" width="584" height="50.5"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-tN-h8o">
+                                            <rect key="frame" x="18" y="8" width="377" height="50.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="More information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJU-aZ-nP6">
-                                            <rect key="frame" x="28" y="26" width="338" height="32.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJU-aZ-nP6">
+                                            <rect key="frame" x="530" y="16" width="62" height="33.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33.5" id="Rfp-Zs-nXl"/>
+                                                <constraint firstAttribute="width" constant="62" id="pdH-u5-ZXR"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="pJU-aZ-nP6" firstAttribute="trailing" secondItem="phX-Zl-bKX" secondAttribute="trailingMargin" id="0C9-5n-NRA"/>
+                                        <constraint firstItem="pJU-aZ-nP6" firstAttribute="top" secondItem="phX-Zl-bKX" secondAttribute="topMargin" constant="8" id="aRb-T3-nVK"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="historySubtitle" destination="pJU-aZ-nP6" id="rW5-wb-0ni"/>
@@ -431,5 +441,6 @@
     <resources>
         <image name="flame" width="30" height="30"/>
         <image name="gear" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
     </resources>
 </document>

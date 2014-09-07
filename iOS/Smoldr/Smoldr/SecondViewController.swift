@@ -10,7 +10,8 @@ import UIKit
 
 class SecondViewController: UITableViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var historyTableView: UITableView!
-    var data = ["Added bedroom smoke alarms", "Added kitchen smoke alarms", "Tested living room smoke alarms", "Added living room smoke alarms", "False smoke alarm in office", ]
+    var data = ["Added bedroom smoke alarms", "Added kitchen smoke alarms", "Tested living room smoke alarms", "Added living room smoke alarms", "False smoke alarm in office"]
+    var dates = ["9/2/14", "9/2/14", "9/4/14", "9/5/14", "9/6/14"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +26,7 @@ class SecondViewController: UITableViewController, UITableViewDelegate, UITableV
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var historyTVC: HistoryUITableViewCell = tableView.dequeueReusableCellWithIdentifier("historyCell") as HistoryUITableViewCell
         historyTVC.historyTitle.text = data[indexPath.row]
-        historyTVC.historySubtitle.text = ""        
+        historyTVC.historySubtitle.text = dates[indexPath.row]
         return historyTVC
     }
     

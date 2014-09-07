@@ -41,9 +41,9 @@ class LoginSignupViewController: UIViewController {
         
         
         // Visual Effect View for background
-        var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.Dark)) as UIVisualEffectView
-        visualEffectView.frame = self.view.frame
-        visualEffectView.alpha = 0.5
+        // var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.Dark)) as UIVisualEffectView
+        //visualEffectView.frame = self.view.frame
+        // visualEffectView.alpha = 0.5
         
         NSTimer.scheduledTimerWithTimeInterval(6, target: self, selector: "changeImage", userInfo: nil, repeats: true)
         self.loginButton(false)
